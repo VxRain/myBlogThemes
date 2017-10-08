@@ -711,8 +711,6 @@ img.alignright {
     position: absolute;
     height: 100%;
     width: 100%;
-    background:#fff url(img/about.png)no-repeat right top;
-background-size: auto 100%;
     text-shadow:1px 1px 0 #fff;
 }
 .body-about .body404{
