@@ -11,11 +11,11 @@
 	<title><?php $this->archiveTitle('.', '', ' - '); ?><?php $this->options->title(); ?></title>
 	<?php endif; ?>
 	<!--[if lt IE 9]>
-    <script src="http://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
+    <script src="https://cdn.staticfile.org/html5shiv/r29/html5.min.js"></script>
     <![endif]-->
-    <link rel="stylesheet" href="http://cdn.staticfile.org/normalize/3.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/normalize/3.0.1/normalize.min.css">
     <link rel="stylesheet" href="<?php $this->options->themeUrl('style.css'); ?>">
-    <script type="text/javascript" src="http://cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.staticfile.org/jquery/1.11.0/jquery.min.js"></script>
   <?php $this->header("generator=&template=&"); ?>
 </head>
 <body>
