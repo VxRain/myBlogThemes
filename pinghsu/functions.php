@@ -121,21 +121,8 @@ function themeInit($archive){
 }
 
 function showThumb($obj,$size=null,$link=false){
-    preg_match_all( "/<[img|IMG].*?src=[\'|\"](.*?)[\'|\"].*?[\/]?>/", $obj->content, $matches );
     $thumb = '';
     $options = Typecho_Widget::widget('Widget_Options');
-    $attach = $obj->attachments(1)->attachment;
-    if (isset($attach->isImage) && $attach->isImage == 1){
-        $thumb = $attach->url;
-        if(!empty($options->src_add) && !empty($options->cdn_add)){
-            $thumb = str_ireplace($options->src_add,$options->cdn_add,$thumb);
-        }
-    }elseif(isset($matches[1][0])){
-        $thumb = $matches[1][0];
-        if(!empty($options->src_add) && !empty($options->cdn_add)){
-            $thumb = str_ireplace($options->src_add,$options->cdn_add,$thumb);
-        }
-    }
     if(empty($thumb) && empty($options->default_thumb)){
         return '';
     }else{
